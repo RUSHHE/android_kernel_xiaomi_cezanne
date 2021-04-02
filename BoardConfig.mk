@@ -4,11 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-KERNEL_PATH := device/xiaomi/lmi-kernel
+KERNEL_PATH := device/xiaomi/cezanne-kernel
 
 # Kernel
 NEED_KERNEL_MODULE_SYSTEM := true
 BOARD_PREBUILT_DTBOIMAGE := $(KERNEL_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(KERNEL_PATH)/prebuilt/dtb
-TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/prebuilt/Image
+TARGET_PREBUILT_KERNEL := $(KERNEL_PATH)/prebuilt/kernel
 BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
